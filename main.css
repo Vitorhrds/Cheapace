@@ -1,0 +1,124 @@
+:root
+{
+    --green: #f0f0f0;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+*
+{
+    color: var(--fontColor);
+    font: helvetica;
+    box-sizing: border-box;
+}
+body
+{
+    background: var(--bg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+  /* Style the header */
+  /*Essa é a parte do código em que apresento as pesquisas e o design do projeto*/
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    --fontColor: var(--black);
+    padding: 0;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background: var(--bg);
+    padding: 10px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  /*Aqui termina a parte de apresentação das pesquisas e design do projeto no overall*/
+
+ul
+{
+    font-family: helvetica;
+}
+
+li
+{
+    list-style: circle;
+}
+    
+.list
+{
+    
+    list-style: square; 
+}
+
+
+.light-theme
+{
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--white);
+    --btnFontColor: var(--white);
+}
+.dark-theme
+{
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(content:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvaFxE9d3cQpK13Qi9lQ6HmCq585Q39A2bqw&usqp=CAU"));
+}
+
+.btn
+{
+    position: absolute;
+    top: 20px;
+    left: 1200px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn:focus
+{
+    outline-style: none;
+}
