@@ -1,5 +1,3 @@
-# site-simples
+# Cheapace
 
-website com temas claro e escuro com HTML, Javascript e CSS.
-
-website with dark and light themes with HTML, Javascript e CSS.
+Cheap and sustainable fuel/method for launching rockets
